@@ -1,10 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+// Global instance to prevent multiple connections
+const globalForPrisma = globalThis as unknown as {
+  prisma: PrismaClient | undefined;
+};
+
+const prisma = globalForPrisma.prisma ?? new PrismaClient();
+
+if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma;
 
 export async function GET(req: NextRequest) {
   try {
+    // Ensure Prisma client is connected
+    await prisma.$connect();
+    
     const { searchParams } = new URL(req.url);
     const rank = searchParams.get('rank');
     const year = searchParams.get('year');
@@ -116,5 +126,7 @@ export async function GET(req: NextRequest) {
   } catch (error) {
     console.error('Error predicting colleges:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
+  } finally {
+    await prisma.$disconnect();
   }
 }
