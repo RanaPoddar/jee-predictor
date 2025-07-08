@@ -24,7 +24,14 @@ export async function GET(req: NextRequest) {
     }
 
     // Build dynamic where clause based on filters
-    const whereClause: any = {};
+    const whereClause: {
+      year?: number;
+      round?: number;
+      instituteType?: string;
+      seatType?: string;
+      gender?: string;
+      quota?: string;
+    } = {};
 
     if (year) {
       whereClause.year = parseInt(year);

@@ -25,7 +25,13 @@ export function formatRank(rank: string | null): string {
   return isNaN(numRank) ? 'N/A' : numRank.toLocaleString();
 }
 
-export function filterResultsByRank(results: any[], userRank: number) {
+interface CutoffResult {
+  openingRank: string | null;
+  closingRank: string | null;
+  [key: string]: unknown;
+}
+
+export function filterResultsByRank(results: CutoffResult[], userRank: number) {
   return results.filter(result => {
     return compareRanks(result.openingRank, result.closingRank, userRank);
   });
