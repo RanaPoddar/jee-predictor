@@ -24,7 +24,7 @@ export default function JEEAdvancedCollegePredictorPage() {
               JEE Advanced Predictor Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're working on bringing you the most accurate JEE Advanced college predictor. 
+              We&apos;re working on bringing you the most accurate JEE Advanced college predictor. 
               Stay tuned for updates!
             </p>
             <div className="space-y-4">

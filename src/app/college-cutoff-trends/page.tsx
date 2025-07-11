@@ -117,7 +117,7 @@ export default function CollegeCutoffTrendsPage() {
               Advanced Cutoff Analytics Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're building comprehensive cutoff trend analysis with interactive charts and predictions.
+              We&apos;re building comprehensive cutoff trend analysis with interactive charts and predictions.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">

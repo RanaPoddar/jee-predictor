@@ -24,11 +24,11 @@ export default function AKTUCollegePredictorPage() {
               AKTU Predictor Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're building a comprehensive predictor for AKTU (Dr. A.P.J. Abdul Kalam Technical University) admissions.
+              We&apos;re building a comprehensive predictor for AKTU (Dr. A.P.J. Abdul Kalam Technical University) admissions.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-orange-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-orange-800 mb-2">What's Coming:</h3>
+                <h3 className="font-semibold text-orange-800 mb-2">What&apos;s Coming:</h3>
                 <ul className="text-sm text-orange-700 space-y-1">
                   <li>• Government college predictions</li>
                   <li>• Self-financed college options</li>

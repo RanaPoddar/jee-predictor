@@ -187,7 +187,7 @@ export default function CollegeBlogsPage() {
               More Expert Content Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're working on bringing you more comprehensive guides, tips, and insights.
+              We&apos;re working on bringing you more comprehensive guides, tips, and insights.
             </p>
           </div>
         </div>

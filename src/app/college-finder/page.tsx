@@ -134,7 +134,7 @@ export default function CollegeFinderPage() {
               Advanced College Finder Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're building a comprehensive college finder with detailed filters and recommendations.
+              We&apos;re building a comprehensive college finder with detailed filters and recommendations.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-green-50 p-4 rounded-lg">

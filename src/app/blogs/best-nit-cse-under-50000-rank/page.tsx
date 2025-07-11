@@ -176,7 +176,7 @@ export default function BestNITCSEUnder50000RankPage() {
                 <h4 className="font-semibold text-blue-900 mb-2">Pro Tip:</h4>
                 <p className="text-blue-800">
                   Create a list of 15-20 NITs within your rank range and prioritize them based on your preferences. 
-                  Don't just focus on the top NITs - many newer NITs offer excellent opportunities with lower cutoffs.
+                  Don&apos;t just focus on the top NITs - many newer NITs offer excellent opportunities with lower cutoffs.
                 </p>
               </div>
 
