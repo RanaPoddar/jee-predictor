@@ -101,7 +101,7 @@ export default function PercentileToRankConverterPage() {
               Rank Prediction Tools Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're developing accurate conversion tools with historical data analysis.
+              We&apos;re developing accurate conversion tools with historical data analysis.
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-purple-50 p-4 rounded-lg">

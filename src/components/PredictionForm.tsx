@@ -79,21 +79,21 @@ export default function PredictionForm() {
     }
   }
 
-  // Helper function to get priority badge
-  const getPriorityBadge = (instituteType: string | null) => {
-    switch (instituteType) {
-      case 'IIT':
-        return <span className="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">TOP</span>;
-      case 'NIT':
-        return <span className="bg-orange-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">HIGH</span>;
-      case 'IIIT':
-        return <span className="bg-yellow-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">MED</span>;
-      case 'GFTI':
-        return <span className="bg-blue-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">GOOD</span>;
-      default:
-        return null;
-    }
-  }
+  // Helper function to get priority badge (currently unused but kept for future use)
+  // const getPriorityBadge = (instituteType: string | null) => {
+  //   switch (instituteType) {
+  //     case 'IIT':
+  //       return <span className="bg-red-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">TOP</span>;
+  //     case 'NIT':
+  //       return <span className="bg-orange-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">HIGH</span>;
+  //     case 'IIIT':
+  //       return <span className="bg-yellow-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">MED</span>;
+  //     case 'GFTI':
+  //       return <span className="bg-blue-500 text-white px-1.5 py-0.5 rounded text-xs font-bold">GOOD</span>;
+  //     default:
+  //       return null;
+  //   }
+  // }
 
   // Helper function to format round display
   const formatRound = (round: number | null) => {

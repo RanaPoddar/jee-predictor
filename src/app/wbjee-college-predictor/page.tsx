@@ -24,7 +24,7 @@ export default function WBJEECollegePredictorPage() {
               WBJEE Predictor Coming Soon
             </h2>
             <p className="text-gray-600 mb-8">
-              We're developing a comprehensive WBJEE college predictor for West Bengal engineering admissions.
+              We&apos;re developing a comprehensive WBJEE college predictor for West Bengal engineering admissions.
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-green-50 p-4 rounded-lg">

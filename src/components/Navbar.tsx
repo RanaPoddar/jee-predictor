@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, X, ChevronDown, Calculator, Search, TrendingUp, BookOpen, Target } from 'lucide-react'
+import { Menu, X, ChevronDown, Calculator, Search, BookOpen, Target } from 'lucide-react'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -87,7 +87,7 @@ export default function Navbar() {
                     <div className={`absolute top-full left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-gray-100/50 py-2 transition-all duration-300 backdrop-blur-sm ${
                       activeDropdown === item.title ? 'opacity-100 visible translate-y-0 scale-100' : 'opacity-0 invisible -translate-y-2 scale-95'
                     }`}>
-                      {item.items?.map((subItem, index) => (
+                      {item.items?.map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}

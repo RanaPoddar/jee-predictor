@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Search, TrendingUp, Calculator, BookOpen, Filter, BarChart3 } from 'lucide-react'
+import { Search, TrendingUp, Calculator, BookOpen } from 'lucide-react'
 import Navbar from '@/components/Navbar'
 
 export default function Home() {
